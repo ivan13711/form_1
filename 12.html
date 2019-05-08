@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>поле бронирования</title>
+  </head>
+  <body>
+    <h2>анкета для бронирования</h2>
+<form class="" action="index.html" method="post">
+    <fieldset>
+      <legend>Личьные данные  </legend>
+      <input type="text" name="name1"  required >Ваше Имя  <br>
+      <input type="text" name="name2"  required> Ваша Фамилия <br>
+      <h3>выберите пол</h3>
+     <input type="radio" name="gender" value="m1"> мужской
+       <input type="radio" name="gender" value="m2"> женский <br>
+       <input type="date" name="dateOfBorn" > дата вашего рождения <br>
+       <input type="email" name="email" value="ecolab07@rambler.ru" required> Введите ваш email <br>
+       <input type="tel" name="namber_fone" value="+375-000-00-00" required> Номер вашего телефона <br>
+    </fieldset>
+  <fieldset>
+    <legend> Данные о гостях</legend>
+
+  Количество взрослых
+
+        <select name="">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select> <br>
+            Количество детей
+            <select name="">
+              <option value="нет">1</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="4">5</option>
+            </select><br>
+
+
+    <input type="datetime-local" name="" value="" required> Дата заселения <br>
+       <input type="date" name="" value="">  Дата выезда <br>
+
+  </fieldset>
+  <fieldset>
+    <legend> Дополнительная информация </legend>
+
+     <h3>выбор номера для курящих</h3>
+              <input type="radio" name="smokroom" value="true">  Да
+                <input type="radio" name="smokroom" value="fols"> Нет <br>
+      <p>при отсустсвии подходящего номера вы будете заселены в различьные номера</p>
+                  <input type="radio" name="" value=""> Да, я согласен <br>
+       <p>ваши коментарии</p>
+                  <textarea name="koment" rows="8" cols="80"></textarea> <br>
+
+  </fieldset>
+
+ <input type="reset" name="" value="начать с начала">
+ <input type="submit" name="" value="отправить">
+    </form>
+
+  </body>
+</html>
