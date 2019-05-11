@@ -2,18 +2,21 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="form.css">
     <title>поле бронирования</title>
   </head>
   <body>
     <h2>анкета для бронирования</h2>
-<form class="" action="index.html" method="post">
+<div>
+  <form class="" action="index.html" method="post">
     <fieldset>
       <legend>Личьные данные  </legend>
-      <input type="text" name="name1"  required >Ваше Имя  <br>
+       <div class="wi"><input type="text" name="name1"  required >Ваше Имя  <br>
       <input type="text" name="name2"  required> Ваша Фамилия <br>
       <h3>выберите пол</h3>
-     <input type="radio" name="gender" value="m1"> мужской
-       <input type="radio" name="gender" value="m2"> женский <br>
+     <input class="radio" type="radio" name="gender" value="m1"> мужской
+       <input  class="radio"type="radio" name="gender" value="m2"> женский <br>
        <input type="date" name="dateOfBorn" > дата вашего рождения <br>
        <input type="email" name="email" value="ecolab07@rambler.ru" required> Введите ваш email <br>
        <input type="tel" name="namber_fone" value="+375-000-00-00" required> Номер вашего телефона <br>
@@ -48,18 +51,18 @@
     <legend> Дополнительная информация </legend>
 
      <h3>выбор номера для курящих</h3>
-              <input type="radio" name="smokroom" value="true">  Да
-                <input type="radio" name="smokroom" value="fols"> Нет <br>
+              <input class="radio" type="radio" name="smokroom" value="true">  Да
+                <input  class="radio" type="radio" name="smokroom" value="fols"> Нет <br>
       <p>при отсустсвии подходящего номера вы будете заселены в различьные номера</p>
-                  <input type="radio" name="" value=""> Да, я согласен <br>
+                  <input class="radio" type="radio" name="" value=""> Да, я согласен <br>
        <p>ваши коментарии</p>
                   <textarea name="koment" rows="8" cols="80"></textarea> <br>
 
   </fieldset>
 
- <input type="reset" name="" value="начать с начала">
- <input type="submit" name="" value="отправить">
+ <input class="but" type="reset" name="" value="начать с начала">
+ <input class="but aling_right" type="submit" name="" value="отправить">
     </form>
-
+</div>
   </body>
 </html>
